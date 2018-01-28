@@ -1,0 +1,122 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	min-height: 100%;
+	font-family: "Exo", sans-serif;
+	display: block;
+}
+section {
+	position: relative;
+	display: block;
+}
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+.content-wr {
+	min-height: 100vh;
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+#myApp .content-wr {
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+#myDiv {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+#myApp {
+	min-height: 100vh;
+	background: url(to-do-list.jpg) no-repeat center fixed;
+	background-size: cover;
+}
+* {
+	box-sizing: border-box;
+}
+ul {
+	width: 70%;
+	margin: 0;
+	padding: 0;
+}
+ul li {
+	color: #f5f5f5;
+	cursor: pointer;
+	position: relative;
+	padding: 12px 8px 12px 40px;
+	background: #bcaaa4;
+	font-size: 18px;
+	transition: 0.2s;
+	list-style-type: none;
+	border: 1px solid #a1887f;
+	border-radius: 5px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+ul li:nth-child (odd) {
+	background: #a1887f;
+}
+ul li:hover {
+	background: #bcaaa4;
+}
+ul li.checked {
+	background: #8d6e63;
+	text-decoration: line-through;
+	color: #d3d3d3;
+}
+.close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 12px 16px 12px 16px;
+}
+.close:hover {
+	background: #5d4037;
+	color: #fff;
+}
+.header {
+	height: 40vh;
+	padding: 30px 40px;
+	color:  #3e2723;
+	text-align: center;
+}
+input {
+	background-color: #d7ccc8;
+	border: none;
+	width: 500px;
+	padding: 10px;
+	float: left;
+	font-size: 16px;
+	border: 1px solid #3e2723;
+	border-radius: 5px;
+}
+.addBtn {
+	padding: 10px;
+	width: 200px;
+	background: #5d4037;
+	color: #fff;
+	float: left;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s;
+	border: 1px solid transparent;
+	border-radius: 5px;
+}
+.addBtn:hover {
+	background: #a1887f;
+}
+#warning {
+	margin: 5px;
+	font-weight: 700;
+	color: #f44336;
+	height: 3vh;
+}
